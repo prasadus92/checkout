@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: checkout
+    mongodb:
+        embedded:
+            features: SYNC_DELAY
+            version: 2.6.10
+
+server:
+    port: 9000
+    compression:
+        enabled: true
+        min-response-size: 1000
+
+logging:
+    config: classpath:logback.xml
